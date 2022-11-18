@@ -1,0 +1,253 @@
+html {
+  font-size: 10px;
+}
+body, ul {
+  margin: 0;
+  padding: 0;
+  background-color: #212529;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+  margin-bottom: 125px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+}
+li.nav-item > a, 
+.global-btn{
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  padding: 25px 12.5px;
+  box-sizing: border-box;
+  transition: all .4s;
+}
+li.nav-item > a:hover {
+  color: #FFB742;
+}
+li.nav-item > a:active {
+  font-size: 3.2rem;
+}
+.global-btn {
+  color: #212529;
+  padding: 12px 26px;
+  background-color: #ffb742;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all .8s;
+}
+.global-btn:hover {
+  background-color: #292B2E;
+  color: #FFB742;
+  border: 1px solid #ffb742;
+  transition: all .4s;
+}
+
+/* Section */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-text {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.text-link {
+  color: #FFB742;
+}
+.second-text {
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.last-text {
+  font-size: 2.4rem;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.sect-img{
+  margin-bottom: 160px;
+}
+
+/* Section card */
+
+.section-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+.color-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #292B2E;
+  width: 420px;
+  height: 120px;
+  box-sizing: border-box;
+  transition: all .5s;
+  margin-bottom: 160px;
+}
+.item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.yellow-text {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFB742;
+}
+.white-text {
+  font-size: 1.6rem;
+}
+.card-item:hover .yellow-text,
+.card-item:hover .white-text,
+.card-item:hover .item-more {
+  color: black;
+  transform: all .4s;
+}
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+.card-item:hover {
+  background-color: #FFB742;
+  transform: all .4s;
+}
+
+/* Section About Me */
+
+.section-about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.who-iam {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFB742;
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 115px;
+  border-radius: 50px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.about-me {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+.person-ifo {
+  font-size: 1.6rem;
+  color: #D4D4D4;
+  width: 670px;
+  margin-bottom: 65px;
+}
+
+/* Section About My Works */
+
+.section-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 115px;
+}
+.menu-item-info {
+  margin-bottom: 55px;
+}
+.main-menu{
+  display: flex;
+}
+.menu-item {
+  list-style: none;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 1.6rem;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all .8s;
+  margin-left: 20px;
+}
+.menu-item:hover {
+  background-color: #FFB742;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all .4s;
+}
+.menu-card {
+  display: flex;
+}
+.card-pic {
+  margin: 30px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1C1C1C;
+  padding: 123px 10px;
+}
+.text-yellow {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #FFB742;
+  margin-bottom: 20px;
+}
+.text-creative {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #D4D4D4;
+}
+.footer-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  background-color: #1C1C1C;
+  margin-bottom: 20px;
+}
+.item-li {
+  list-style: none;
+  background-color: #1C1C1C;
+  font-size: 1.8rem;
+  color: #D4D4D4;
+  padding: 10px;
+  transition: all .4s;
+}
+.item-li:active {
+  color: #FFB742;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: all .4s;
+}

@@ -1,0 +1,804 @@
+html {
+    font-size: 10px;
+    font-family: 'Rosario', sans-serif;
+    font-weight: 700;
+}
+body {
+    /*position: relative;*/
+    /*max-width: 1620px;*/
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+
+}
+img {
+    width: 100%;
+}
+
+    /* Заголовок header */
+
+.fool-info {
+    margin: 0;
+}
+.content {
+    margin-bottom: 140px;
+}
+.header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header-logo {
+    background-color: #FFFCFC;
+}
+.link-logo {
+    width: 100%;
+    min-width: 130px;
+}
+.nav-link {
+    display: flex;
+}
+.ul-lists {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.link-item {
+    margin-right: 40px;
+    font-size: 3.6rem;
+    text-decoration: none;
+    color: #FFFCFC;
+}
+.link-item:hover {
+    margin-top: 3px;
+    border-bottom: 3px solid #FFFCFC;
+    transition: all 2s;
+}
+
+/* Перші шість картинок */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.img-center{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-img-one,
+.img-six {
+    margin: 20px;
+}
+.img-two-three {
+    margin-right: 20px;
+}
+.img-one,
+.img-six {
+    display: flex;
+    align-items: center;
+}
+.container-img-two,
+.container-img-four {
+    margin-bottom: 20px;
+}
+
+/* Тарнсформація зміщення лівих картинок */
+
+.img-one {
+    position: relative;
+    right: 500px;
+    /*animation-name: one-left-card;*/
+    /*animation-duration: 2s;*/
+    /*animation-timing-function: ease-in-out;*/
+    /*animation-iteration-count: 1;*/
+    /*animation-direction: alternate;*/
+    /*animation-delay: 1s;*/
+    /*animation-fill-mode: forwards;*/
+    animation: one-left-card 2s ease-in-out 1 alternate 2s forwards;
+}
+@keyframes one-left-card {
+    0% {
+        left: -410px;
+    }
+    100% {
+        left: 0;
+    }
+}
+.img-two-three {
+    position: relative;
+    right: 950px;
+    animation: two-three-left-card 2s ease-in-out 1 alternate forwards;
+}
+@keyframes two-three-left-card {
+    0% {
+        left: -950px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Тарнсформація зміщення правих картинок */
+
+.img-six {
+    order: 1;
+    position: relative;
+    left: 500px;
+    animation: six-right-card 2s ease-in-out 1 alternate 2s forwards;
+}
+@keyframes six-right-card {
+    0% {
+        left: 410px;
+    }
+    100% {
+        left: 0;
+    }
+}
+.img-four-five {
+    position: relative;
+    left: 950px;
+    animation: four-five-right-card 2s ease-in-out 1 alternate forwards;
+}
+@keyframes four-five-right-card {
+    0% {
+        left: 950px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Сторінка Gallery */
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-spinning-img {
+    max-width: 773px;
+    display: flex;
+    align-items: center;
+}
+.gallery-spinning-img img {
+    padding: 10px;
+}
+.marg-spr-img {
+    margin: 60px;
+    text-align: center;
+}
+.marg-spr-img img {
+    width: 250px;
+}
+.spinning-text {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000;
+}
+.static-big-img-one {
+    margin-left: 145px;
+    width: 80%;
+}
+
+/* Перемещення чотирьох карток */
+
+.gallery-spinning-img {
+   width: 50%;
+}
+.spinning-img-one-two {
+    position: relative;
+}
+.spinning-img-one {
+    position: absolute;
+    animation: spinning-one 10s ease infinite;
+}
+@keyframes spinning-one {
+    0% {
+        transform:translate(0)
+    }
+    25% {
+        transform:translateY(-350px)
+    }
+    50% {
+        transform:translateX(350px) translateY(-350px);
+    }
+    75% {
+        transform:translate(350px,0)
+    }
+}
+.spinning-img-two {
+    position: absolute;
+    animation: spinning-two 10s ease infinite;
+}
+@keyframes spinning-two {
+    0% {
+        transform:translateY(-350px) translateX(0);
+    }
+    25% {
+        transform:translateY(-350px) translateX(350px);
+    }
+    50% {
+        transform:translateY(0) translateX(350px)
+    }
+    75% {
+        transform:translateY(0) translateX(0);
+    }
+    100% {
+        transform:translateY(-350px) translateX(0);
+    }
+}
+.spinning-img-three-four{
+    position: relative;
+}
+.spinning-img-three {
+    position: absolute;
+    animation: spinning-three 10s ease infinite;
+}
+@keyframes spinning-three {
+    0% {
+        transform:translateY(-350px) translateX(350px);
+    }
+    25% {
+        transform:translateY(0) translateX(350px)
+    }
+    50% {
+        transform:translateY(0) translateX(0)
+    }
+    75% {
+        transform:translateY(-350px)
+    }
+    100% {
+        transform:translateY(-350px) translateX(350px)
+    }
+}
+.spinning-img-four {
+    position: absolute;
+    animation: spinning-four 10s ease infinite;
+}
+@keyframes spinning-four {
+    0% {
+        transform:translateY(0) translateX(350px);
+    }
+    25% {
+        transform:translateY(0) translateX(0)
+    }
+    50% {
+        transform:translateY(-350px) translateX(0)
+    }
+    75% {
+        transform:translateY(-350px) translateX(350px)
+    }
+    100% {
+        transform:translateY(0) translateX(350px);
+    }
+}
+
+/* Сторінка Services */
+
+.services {
+    padding-top: 130px;
+}
+.text-header {
+    text-align: center;
+    font-size: 9.6rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.services-card {
+    display: flex;
+    justify-content: space-around;
+}
+.card-item{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    min-height: 677px;
+    min-width: 355px;
+    filter: brightness(60%);
+}
+.card-item:nth-child(1){
+    background-image: url('../images/Rectangle 8.png');
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    margin: 0 5px 0 0;
+}
+.card-item:nth-child(2){
+    background-image: url('../images/Rectangle 12.png');
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    margin: 0 5px 0 5px;
+}
+.card-item:nth-child(3){
+    background-image: url('../images/Rectangle 13.png');
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    margin: 0 5px 0 5px;;
+}
+.card-item:nth-child(4){
+    background-image: url('../images/Rectangle 9.png');
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    margin: 0 0 0 5px;
+}
+.card-item .team-card{
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4.8rem;
+    /*line-height: 62px;*/
+    border-radius: 0 0 40px 40px;
+    color: #FFFAFA;;
+    padding: 25px 0;
+    opacity: 0;
+}
+.card-item:hover{
+    filter: brightness(100%);
+    transition: all 0.8s linear;
+}
+.card-item:hover .team-card{
+    display: inline-block;
+    transition: all 0.3s linear;
+    background: rgba(163, 83, 10, 0.6);
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+    opacity: 1;
+}
+.card-item:not(:hover){
+    transition: all 0.8s linear;
+}
+.card-item:not(:hover) div{
+    transition: all 0.8s linear;
+}
+
+/* Ім'я, Емейл, Текст, Мапа */
+
+.reviews {
+    padding: 155px 0 80px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text-input {
+    font-size: 6.4rem;
+    font-weight: 700;
+    width: 789px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-info {
+    display: flex;
+}
+.section-input {
+    width: 885px;
+    height: 345px;
+    background-color: #E5E5E5;
+}
+.text-comment {
+    width: 859px;
+    height: 209px;
+    font-size: 3.6rem;
+    font-family: 'Rosario', sans-serif;
+    font-weight: 700;
+    margin: 10px;
+}
+.inp-name {
+    width: 377px;
+    height: 80px;
+    font-size: 3.6rem;
+    margin: 10px;
+}
+.inp-email {
+    font-size: 3.6rem;
+    width: 452px;
+    height: 80px;
+    margin: 10px;
+}
+.iframe {
+    border: 0;
+    width: 540px;
+    height: 519px;
+}
+
+/* Футер */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.big-text {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.low-text,
+.low-text a{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+.col-tow-header {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.col-week {
+    font-size: 3rem;
+    font-weight: 400;
+}
+.col-three-header {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.link-site {
+    margin-right: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+.text-center {
+    margin-left: 50px;
+}
+.img-icon-inst {
+    width: 10%;
+    margin-right: 18px;
+}
+.img-icon-face {
+    width: 15%;
+    margin: 0 11px 0 -5px;
+}
+.img-icon-twit {
+    width: 10%;
+    margin-right: 9px
+}
+
+@media screen and (min-width: 1620px) {
+    .content, .gallery, .services, .reviews, .footer {
+        max-width: 1620px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .gallery-spinning-img {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .services-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 743px);
+        justify-items: center;
+    }
+
+    .card-item {
+        min-width: 409px;
+    }
+
+    .card-item .team-card {
+        width: 396px;
+        margin-bottom: 66px;
+    }
+
+    .big-image {
+        margin: 0 auto;
+    }
+
+    .reviews {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    .gallery {
+        display: block;
+        margin-top: 289px;
+    }
+    .big-image {
+        text-align: center;
+        width: 70%;
+        margin-left: 96px;
+    }
+    .gallery-spinning-img {
+        padding-bottom: 434px;
+        margin-left: 180px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .nav-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+        display: block;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .img-one {
+        position: relative;
+        right: 1450px;
+        animation: one-left-card 2s ease-in-out 1 alternate forwards;
+    }
+
+    @keyframes one-left-card {
+        0% {
+            left: -750px;
+        }
+        100% {
+            left: 81px;
+        }
+    }
+    .img-two-three {
+        position: relative;
+        right: 1450px;
+        animation: two-three-left-card 2s ease-in-out 1 alternate forwards;
+    }
+
+    @keyframes two-three-left-card {
+        0% {
+            left: -750px;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    .container-img-two,
+    .container-img-three {
+        width: 83%;
+        margin-left: 50px;
+    }
+
+
+    .img-six {
+        position: relative;
+        left: 900px;
+        animation: six-right-card 2s ease-in-out 1 alternate forwards;
+    }
+
+    @keyframes six-right-card {
+        0% {
+            left: 900px;
+        }
+        100% {
+            left: 151px;
+        }
+    }
+    .img-four-five {
+        position: relative;
+        left: 950px;
+        animation: four-five-right-card 2s ease-in-out 1 alternate forwards;
+    }
+
+    @keyframes four-five-right-card {
+        0% {
+            left: 950px;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    .container-img-four,
+    .container-img-five {
+        width: 88%;
+        margin-right: 20px;
+    }
+
+    .img-one,
+    .img-six {
+        max-width: 350px;
+        display: inline-block;
+    }
+
+    .container-img-one {
+        width: 350px;
+    }
+
+    .alt-media {
+        margin: 0 auto;
+    }
+
+    .gallery {
+        position: relative;
+        display: block;
+        margin-bottom: 649px;
+        min-height: 861px;
+    }
+
+    .static-big-img-one {
+        margin-left: 96px;
+        width: 80%;
+    }
+
+    .gallery-spinning-img {
+        position: absolute;
+        top: 1050px;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .services-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 743px);
+        justify-items: center;
+    }
+    .card-item {
+        min-width: 409px;
+    }
+    .card-item .team-card {
+        width: 396px;
+        margin-bottom: 66px;
+    }
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    }
+
+@media screen and (max-width: 910px) {
+    .section-input {
+        max-width: 755px;
+    }
+    .inp-email,
+    .inp-name {
+        width: 338px;
+    }
+    .input-info {
+        justify-content: center;
+    }
+    .inp-massage {
+        display: flex;
+        justify-content: center;
+    }
+    .text-comment {
+        width: 707px;
+    }
+}
+
+    @media screen and (max-width: 860px){
+        .services-card {
+            display: block;
+        }
+        .services-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-item .team-card {
+            margin-bottom: 0px;
+        }
+    }
+
+@media screen and (max-width: 768px){
+    .gallery-spinning-img {
+        position: absolute;
+        top: 1px;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .gallery {
+        min-height: 1px;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    .alt-media {
+        margin: 0;
+    }
+    .img-one {
+        max-width: none;
+    }
+    .container-img-one {
+        width: 100%;
+    }
+    .img-rectang {
+        width: 85%;
+    }
+    @keyframes one-left-card {
+        0% {
+            left: -749px;
+        }
+        100% {
+            left: 126px;
+        }
+    }
+    .img-center {
+        display: block;
+    }
+    .img-two-three {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .container-img-two, .container-img-three {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .img-four-five, container-img-five {
+        width: 70%;
+        margin: 0 auto;
+    }
+    @keyframes four-five-right-card {
+        0% {
+            left: 956px;
+        }
+        100% {
+            left: 25px;
+        }
+    }
+    .container-img-two, .container-img-four {
+        margin-bottom: 20px;
+    }
+
+    .big-image {
+        display: none;
+    }
+
+    .services-card {
+        display: block;
+    }
+    .card-item:nth-child(1),
+    .card-item:nth-child(2),
+    .card-item:nth-child(3),
+    .card-item:nth-child(4) {
+        background-position: center;
+        box-sizing: border-box;
+    }
+    .card-item .team-card {
+        width: 404px;
+        margin-left: 161px;
+    }
+
+    .reviews {
+        flex-direction: column-reverse;
+    }
+    .iframe-map {
+        margin: 0 auto;
+    }
+    .text-input {
+        text-align: center;
+        font-size: 3.9rem;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .inp-email,
+    .inp-name {
+        width: 338px;
+    }
+    .input-info {
+        justify-content: center;
+    }
+    .inp-massage {
+        display: flex;
+        justify-content: center;
+    }
+    .text-comment {
+        width: 707px;
+    }
+    }
+
+

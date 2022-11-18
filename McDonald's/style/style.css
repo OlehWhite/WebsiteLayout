@@ -1,0 +1,272 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+    background-color: #ECECEC;
+}
+
+/* Хедер сайту */
+
+.nav {
+    margin: 35px 0 30px 0;
+}
+.container-fluid {
+    max-width: 1300px;
+}
+.header {
+    border-bottom: #8B9296;
+    border-bottom: 2px solid #C4C4C4;
+    display: flex;
+}
+.header-flex {
+    justify-content: space-between;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+.me-2 {
+    margin-right: 6.5rem!important;
+}
+.min-width-inp {
+    min-width: 500px;
+}
+
+/* Дві кнопки: жовта і зелена */
+
+.btn-yellow {
+    margin-right: 20px;
+    border: none;
+    background-color: #EF781A;
+    color: #FFFCFC;
+}
+.btn-green {
+    border: none;
+    background-color: #00D008;
+    color: #FFFCFC;
+}
+.btn-yellow:hover,
+.btn-green:hover {
+    box-sizing: border-box;
+    background-color: #FFFCFC;
+    border: 1px solid;
+    color: #A1A1A1;
+}
+
+/* Надпис Макдональдз */
+
+.container-mc {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #C4C4C4;
+    box-shadow: 0 3px 4px #C4C4C4;
+    box-sizing: border-box;
+}
+.header-mc {
+    margin-top: 70px;
+    width: 1300px;
+}
+.mc-text {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Навігація меню їжі */
+
+.item-margin {
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    color: #7B7B7B;
+    transition: all .5s;
+    padding-right: 80px;
+}
+.item-margin:hover {
+    border-radius: 10px;
+    color: #343434;
+    background-color: #C4C4C4;
+}
+.sale-card {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Карточки позицій */
+.max-width-center {
+    max-width: 1100px;
+}
+.card-one {
+    max-width: 240px;
+    background-color: #FFFFFF;
+    margin: 30px 20px 20px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 7px 4px #C4C4C4;
+}
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 14px;
+}
+.card-info {
+    font-size: 10px;
+    color: #A1A1A1;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.many-and-like {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.card-many {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.text-transform-left {
+    margin-left: -165px;
+}
+.img-burger {
+    width: 100%;
+}
+.card-center {
+    margin: 0 20px 0 20px;
+}
+.card-margin-bottom {
+    padding-top: 15px;
+}
+
+
+/* Ховер для картки */
+
+.card-cash {
+    opacity: 0;
+}
+.card-one:hover .card-cash{
+    opacity: 1;
+    z-index: 5;
+    width: 113px;
+    height: 35px;
+    text-align: center;
+    padding-top: 4px;
+    color: #FFFCFC;
+    background-color: #EF781A;
+    border-radius: 10px;
+}
+svg:hover path{
+    color: #69A042;
+    fill: #69A042;
+    stroke-width: 0;
+}
+
+/* Про партнера */
+
+.bc-white {
+    margin-left: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    max-width: 775px;
+    background-color: #FFFCFC;
+    border-radius: 10px;
+    box-shadow: 0 7px 4px #C4C4C4;
+}
+.big-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.low-text {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 5px;
+}
+
+/* Катка замовлення */
+
+.card-list {
+    margin-left: 10px;
+    max-width: 400px;
+    padding: 25px 16px;
+    background-color: #FFFCFC;
+    border-radius: 10px;
+    box-shadow: 0 7px 4px #C4C4C4;
+}
+.big-text-list {
+    font-size: 18px;
+    font-weight: bold;
+}
+.normal-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+.item-card {
+    font-size: 12px;
+    color: #979797;
+}
+.yellow-color {
+    background-color: #FF6C01;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+.one-margin {
+    margin-bottom: 10px;
+}
+.first-space {
+    margin-left: 50px;
+}
+.last-space {
+    margin-left: 25px;
+}
+.long-space {
+    margin-left: 220px;
+}
+.btn-full-money {
+    border: #FFFCFC;
+    border-radius: 10px;
+    color: #FFFCFC;
+    background-color: #FF6C01;
+    padding: 15px;
+}
+.margin-left-last-money {
+    margin-left: 120px;
+}
+
+/* Футер */
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    background-color:#323232;
+    box-shadow: 0 3px 4px #C4C4C4;
+    box-sizing: border-box;
+}
+.header-footer {
+    width: 1300px;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.items-list {
+    display: flex;
+}
+.list-footer {
+    padding-right: 20px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    color: #FFFCFC;
+}
+
+/* Стрілка меню */
+
+.arrow-menu {
+    position: fixed;
+    z-index: 2;
+    top: 820px;
+    left: 50px;
+}
